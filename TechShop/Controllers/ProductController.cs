@@ -17,11 +17,11 @@ namespace TechShop.Controllers
 
         //public IActionResult List()
         //{
-        //    //ViewBag.CurrentCategory = "Cheese cakes";
+        //    //ViewBag.CurrentCategory = "Laptops";
 
         //    //return View(_productRepository.AllProducts);
 
-        //    ProductListViewModel ProductsListViewModel = new ProductListViewModel(_productRepository.AllProducts, "Cheese cakes");
+        //    ProductListViewModel ProductsListViewModel = new ProductListViewModel(_productRepository.AllProducts, "Laptops");
         //    return View(ProductsListViewModel);
         //}
 
