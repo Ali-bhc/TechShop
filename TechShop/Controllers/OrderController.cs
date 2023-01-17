@@ -43,6 +43,7 @@ namespace TechShop.Controllers
 
         public IActionResult CheckoutComplete()
         {
+
             ViewBag.CheckoutCompleteMessage = "Thanks for your order. You'll soon enjoy our delicious Products!";
             return View();
         }
