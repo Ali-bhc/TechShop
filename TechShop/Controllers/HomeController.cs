@@ -1,6 +1,6 @@
-﻿using TechShop.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using TechShop.ViewModels;
+using TechShop.Repositories;
 
 namespace TechShop.Controllers
 {

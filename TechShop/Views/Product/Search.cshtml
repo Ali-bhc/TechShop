@@ -36,7 +36,7 @@
                     $.each(Products, function (i, Product) {
                         $("tbody").append($("<tr>"));
                         appendElement = $("tbody tr").last();
-                        appendElement.append($("<td>").html('<img src=' + Product.imageThumbnailUrl + '>'));
+                        appendElement.append($("<td>").html('<img class="img-fluid col-5" src=' + Product.imageThumbnailUrl + '>'));
                         appendElement.append($("<td>").html('<a href="/Product/details/' + Product.ProductId + '">' + Product.name + '</a>'));
                         appendElement.append($("<td>").html(Product.price));
                     });

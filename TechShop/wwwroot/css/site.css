@@ -4786,7 +4786,7 @@ textarea.form-control-lg {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #E5E5E5;
+    background-color: #ffffff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
@@ -4884,10 +4884,19 @@ textarea.form-control-lg {
     border-radius: calc(0.25rem - 1px);
 }
 
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card-img,
 .card-img-top,
 .card-img-bottom {
-    width: 100%;
+    height: 270px; /* Adjust the height as needed */
+    width: auto;
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    margin: 0 auto; /* Center the images horizontally */
 }
 
 .card-img,
@@ -4901,6 +4910,7 @@ textarea.form-control-lg {
     border-bottom-right-radius: calc(0.25rem - 1px);
     border-bottom-left-radius: calc(0.25rem - 1px);
 }
+
 
 .card-group > .card {
     margin-bottom: 0.75rem;
@@ -11824,11 +11834,11 @@ h6, .h6 {
     margin-bottom: -44px;
 }
 
-.pies-of-the-week {
+.products-of-the-week {
     margin-top: 52px;
 }
 
-.pie-button {
+.product-button {
     position: relative;
     left: 0%;
     right: 0%;
@@ -11836,19 +11846,19 @@ h6, .h6 {
     bottom: 0%;
 }
 
-.pie-card {
+.product-card {
     border: none;
 }
 
-.card-body.pie-button {
+.card-body.product-button {
     padding: 0px;
 }
 
-.pie-button > h4, .pie-button > .h4 {
+.product-button > h4, .product-button > .h4 {
     margin-bottom: 0px;
 }
 
-.pie-link {
+.product-link {
     text-decoration: none;
 }
 

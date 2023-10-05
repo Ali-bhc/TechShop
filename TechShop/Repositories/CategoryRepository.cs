@@ -1,6 +1,9 @@
-﻿namespace TechShop.Models
+﻿using TechShop.DAO;
+using TechShop.Models;
+
+namespace TechShop.Repositories
 {
-    public class CategoryRepository: ICategoryRepository
+    public class CategoryRepository : ICategoryRepository
     {
         private readonly TechShopDbContext _TechShopDbContext;
 

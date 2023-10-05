@@ -1,6 +1,7 @@
 using TechShop.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using TechShop.Repositories;
 
 namespace TechShop.Pages
 {

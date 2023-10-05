@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TechShop.DAO;
+using TechShop.Models;
 
-namespace TechShop.Models
+namespace TechShop.Repositories
 {
     public class ProductRepository : IProductRepository
     {

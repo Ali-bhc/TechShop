@@ -1,6 +1,6 @@
-﻿using TechShop.Models;
-using TechShop.ViewModels;
+﻿using TechShop.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using TechShop.Repositories;
 
 namespace TechShop.Components
 {

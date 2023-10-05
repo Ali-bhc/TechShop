@@ -1,5 +1,5 @@
-﻿using TechShop.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using TechShop.Repositories;
 
 namespace TechShop.Components
 {

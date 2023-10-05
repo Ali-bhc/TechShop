@@ -1,6 +1,7 @@
-using TechShop.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using TechShop.Repositories;
+using TechShop.DAO;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("TechShopDbContextConnection") ?? throw new InvalidOperationException("Connection string 'TechShopDbContextConnection' not found.");
@@ -13,8 +14,6 @@ builder.Services.AddDefaultIdentity<IdentityUser>()
 
 builder.Services.AddControllersWithViews();
 
-//builder.Services.AddScoped<ICategoryRepository, MockCategoryRepository>();
-//builder.Services.AddScoped<IPieRepository, MockPieRepository>();
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
@@ -32,9 +31,6 @@ builder.Services.AddDbContext<TechShopDbContext>(options => {
     options.UseSqlServer(
         builder.Configuration["ConnectionStrings:TechShopDbContextConnection"]);
 });
-
-//builder.Services.AddDefaultIdentity<IdentityUser>()
-//.AddEntityFrameworkStores<TechShopDbContext>();
 
 var app = builder.Build();
 

@@ -1,4 +1,4 @@
-﻿using TechShop.Models;
+﻿using TechShop.Repositories;
 
 namespace TechShop.ViewModels
 {

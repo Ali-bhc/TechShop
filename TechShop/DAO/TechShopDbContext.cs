@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using TechShop.Models;
 
-namespace TechShop.Models
+namespace TechShop.DAO
 {
-    public class TechShopDbContext: IdentityDbContext
+    public class TechShopDbContext : IdentityDbContext
     {
         public TechShopDbContext(DbContextOptions<TechShopDbContext> options) : base(options)
         {

@@ -1,6 +1,7 @@
 ﻿using TechShop.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TechShop.Repositories;
 
 namespace TechShop.Controllers.Api
 {

@@ -1,4 +1,6 @@
-﻿namespace TechShop.Models
+﻿using TechShop.Models;
+
+namespace TechShop.Repositories
 {
     public interface IProductRepository
     {
